@@ -1,11 +1,13 @@
 cask "mditor" do
-  version "0.2.0"
-  sha256 "7ef1c2ceb7910cd90fe079638c8ceece60c3241887656fd6be0f397f6612b127"
+  version "0.2.1"
+  sha256 "9c19e5b8b12420884c7796735e4d1df3d8276febcdf73b5d54bfe7e465ccf31f"
 
   url "https://github.com/mejiasd3v/mditor/releases/download/v#{version}/MDitor.zip"
   name "MDitor"
-  desc "Fast, native macOS Markdown editor and viewer built with the Native SDK (markup + Zig, GPU-rendered, no browser)"
+  desc "Native Markdown editor and viewer"
   homepage "https://github.com/mejiasd3v/mditor"
+
+  depends_on macos: ">= :monterey"
 
   app "MDitor.app"
 
