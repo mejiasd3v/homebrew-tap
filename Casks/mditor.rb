@@ -7,10 +7,6 @@ cask "mditor" do
   desc "Fast, native macOS Markdown editor and viewer built with the Native SDK (markup + Zig, GPU-rendered, no browser)"
   homepage "https://github.com/mejiasd3v/mditor"
 
-  # Unsigned app: without this, the quarantined download is blocked by
-  # Gatekeeper on first launch (right-click > Open workaround required).
-  quarantine false
-
   app "MDitor.app"
 
   zap trash: "~/Library/Application Support/mditor"
