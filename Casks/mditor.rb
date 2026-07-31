@@ -7,7 +7,7 @@ cask "mditor" do
   desc "Native Markdown editor and viewer"
   homepage "https://github.com/mejiasd3v/mditor"
 
-  depends_on macos: :monterey
+  depends_on macos: :big_sur
 
   app "MDitor.app"
 
