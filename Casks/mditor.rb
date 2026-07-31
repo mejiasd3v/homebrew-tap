@@ -1,6 +1,6 @@
 cask "mditor" do
   version "0.3.0"
-  sha256 "18c920bf76a217a0e23f36a6890831c6ba3b369350eb4c34b483740c49222d0c"
+  sha256 "fc4cfd04cda37a30d005209b75de2de41c319e682ee534c4a107a9e1c64e3f74"
 
   url "https://github.com/mejiasd3v/mditor/releases/download/v#{version}/MDitor.zip"
   name "MDitor"
