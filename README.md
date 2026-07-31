@@ -1,11 +1,11 @@
-# homebrew-mditor
+# homebrew-tap
 
 Homebrew tap for [MDitor](https://github.com/mejiasd3v/mditor), a fast, native macOS Markdown editor and viewer built with the Native SDK (markup + Zig, GPU-rendered, no browser).
 
 ## Install
 
 ```sh
-brew tap mejiasd3v/homebrew-mditor
+brew tap mejiasd3v/homebrew-tap
 brew install --cask mditor
 ```
 
