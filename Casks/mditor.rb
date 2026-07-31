@@ -17,7 +17,7 @@ cask "mditor" do
     # Register with LaunchServices and assert MDitor as the default
     # handler for Markdown documents.
     system_command "/usr/bin/swift",
-                   args: ["-e", "import CoreServices; let b = \"dev.mditor.app\" as CFString; for u in [\"net.daringfireball.markdown\" as CFString, \"public.markdown\" as CFString] { LSSetDefaultRoleHandlerForContentType(u, .editor, b) }"]
+                   args: ["-e", "import Foundation; import CoreServices; let b: CFString = \"dev.mditor.app\" as NSString; let us: [CFString] = [\"net.daringfireball.markdown\" as NSString, \"public.markdown\" as NSString]; for u in us { LSSetDefaultRoleHandlerForContentType(u, .editor, b) }"]
   end
 
   zap trash: "~/Library/Application Support/mditor"
